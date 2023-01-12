@@ -10,5 +10,7 @@
 # See https://docs.rubocop.org/rubocop/configuration
 require:
   - rubocop-rails
+
+inherit_from:
   - .rubocop-todo.yml
 
