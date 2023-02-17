@@ -15,5 +15,5 @@ inherit_from:
   - .rubocop-todo.yml
 
 Style/ClassAndModuleChildren:
-  Enabled: false
+  Enabled: true
   EnforcedStyle: compact
