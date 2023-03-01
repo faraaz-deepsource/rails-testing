@@ -1,3 +1,6 @@
+require:
+  - rubocop-thread_safety
+  - rubocop-i18n
 
 Rails/FindBy:
   Enabled: true
