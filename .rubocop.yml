@@ -10,6 +10,8 @@
 # See https://docs.rubocop.org/rubocop/configuration
 require:
   - rubocop-rails
+  - rubocop-i18n
+  - rubocop-thread_safety
 
 inherit_from:
   - .rubocop-todo.yml
