@@ -8,6 +8,13 @@ class PeopleController < ApplicationController
 
   # GET /people/1 or /people/1.json
   def show
+    User.transaction do
+      begin
+        # do something
+      rescue StandardError => e
+        # do nothing
+      end
+    end
   end
 
   # GET /people/new
