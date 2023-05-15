@@ -23,6 +23,7 @@ class PeopleController < ApplicationController
   # GET /people/new
   def new
     @person = Person.new
+    Digest::SHA2.new(384).hexdigest 'abc'
   end
 
   # GET /people/1/edit
