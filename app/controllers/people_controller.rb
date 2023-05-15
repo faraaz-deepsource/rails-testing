@@ -24,6 +24,7 @@ class PeopleController < ApplicationController
   def new
     @person = Person.new
     Digest::SHA2.new(384).hexdigest 'abc'
+    Digest::SHA1.hexdigest.new 'abc'
   end
 
   # GET /people/1/edit
