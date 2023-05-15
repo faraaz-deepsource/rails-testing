@@ -1,4 +1,5 @@
 class PeopleController < ApplicationController
+  http_basic_authenticate_with :name => "dhh", :password => "secret", :except => :index
   before_action :set_person, only: %i[ show edit update destroy ]
 
   # GET /people or /people.json
