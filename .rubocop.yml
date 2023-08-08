@@ -20,6 +20,5 @@ Style/ClassAndModuleChildren:
   Enabled: true
   EnforcedStyle: compact
 
-Rails:
-  DynamicFindBy:
-    AllowedReceivers: ['FinancialType']
+Rails/DynamicFindBy:
+  AllowedReceivers: ['FinancialType']
