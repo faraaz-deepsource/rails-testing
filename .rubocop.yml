@@ -19,3 +19,7 @@ inherit_from:
 Style/ClassAndModuleChildren:
   Enabled: true
   EnforcedStyle: compact
+
+Rails:
+  DynamicFindBy:
+    AllowedReceivers: ['FinancialType']
