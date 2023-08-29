@@ -3,5 +3,5 @@ version = 1
 [[analyzers]]
 name = "ruby"
 
-  [[analyzers.meta]]
+  [analyzers.meta]
   cyclomatic_complexity_threshold = "low"
