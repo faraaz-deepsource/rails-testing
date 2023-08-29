@@ -20,6 +20,45 @@ class PeopleController < ApplicationController
     end
   end
 
+  def complex_function(a, b, c, d, e)
+  if a > 10
+    case b
+    when 1
+      if c == :foo
+        while d < 100
+          if e != :bar
+            case d % 3
+            when 0
+              puts "Case 0"
+            when 1
+              puts "Case 1"
+            else
+              puts "Case 2"
+            end
+            d += 1
+          end
+        end
+      else
+        puts "Option A"
+      end
+    when 2
+      if c == :baz
+        for i in 0..5
+          unless i == 3
+            puts "Loop iteration #{i}"
+          end
+        end
+      else
+        puts "Option B"
+      end
+    else
+      puts "Option C"
+    end
+  else
+    puts "Less than or equal to 10"
+  end
+end
+
   # GET /people/new
   def new
     @person = Person.new
